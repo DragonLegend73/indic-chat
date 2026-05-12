@@ -1,0 +1,85 @@
+# =============================================
+# Indic-chat — .gitignore
+# =============================================
+
+# --- Secrets (NEVER commit these) ---
+.env
+.env.local
+.env.*.local
+*.pem
+*.key
+
+# --- Python ---
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+dist/
+build/
+.eggs/
+.venv/
+venv/
+env/
+pip-log.txt
+pip-delete-this-directory.txt
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+htmlcov/
+.coverage
+coverage.xml
+
+# --- Node / Frontend ---
+node_modules/
+dist/
+build/
+.vite/
+*.local
+
+# --- Databases (auto-generated, large) ---
+backend/data/*.db
+backend/data/*.db-shm
+backend/data/*.db-wal
+backend/app/data/*.db
+backend/app/data/*.db-shm
+backend/app/data/*.db-wal
+
+# --- ChromaDB vector store (auto-generated) ---
+backend/data/chroma_db/
+backend/app/data/chroma_db/
+
+# --- Downloaded ML Models (can be huge) ---
+backend/models/
+*.bin
+*.safetensors
+*.gguf
+*.pt
+*.pth
+
+# --- Logs ---
+*.log
+logs/
+
+# --- OS ---
+.DS_Store
+Thumbs.db
+
+# --- IDE ---
+.vscode/settings.json
+.idea/
+
+# --- Scratch / temporary files & ad-hoc debug scripts ---
+scratch/
+backend/scratch/
+backend/app/scratch/
+backend/test_*.py
+backend/check_*.py
+backend/verify_*.py
+backend/verify_*.sh
+backend/api_test.py
+test_*.py
+
+# --- Jupyter ---
+.ipynb_checkpoints/

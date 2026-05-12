@@ -1,0 +1,158 @@
+{
+  "algebra": {
+    "hin_Deva": "बीजगणित",
+    "tam_Taml": "இயற்கணிதம்",
+    "ben_Beng": "বীজগণিত",
+    "tel_Telu": "బీజగణితం",
+    "kan_Knda": "ಬೀಜಗಣಿತ",
+    "mar_Deva": "बीजगणित",
+    "guj_Gujr": "બીજગણિત",
+    "mal_Mlym": "ബീജഗണിതം",
+    "urd_Arab": "الجبرا"
+  },
+  "geometry": {
+    "hin_Deva": "ज्यामिति",
+    "tam_Taml": "வடிவியல்",
+    "ben_Beng": "জ্যামিতি",
+    "tel_Telu": "జ్యామితి",
+    "kan_Knda": "ರೇಖಾಗಣಿತ",
+    "mar_Deva": "भूमिती",
+    "mal_Mlym": "ജ്യാമിതി"
+  },
+  "trigonometry": {
+    "hin_Deva": "त्रिकोणमिति",
+    "tam_Taml": "முக்கோணவியல்",
+    "ben_Beng": "ত্রিকোণমিতি",
+    "tel_Telu": "త్రికోణమితి",
+    "mar_Deva": "त्रिकोणमिती"
+  },
+  "polynomial": {
+    "hin_Deva": "बहुपद",
+    "tam_Taml": "பல்லுறுப்புக்கோவை",
+    "ben_Beng": "বহুপদী"
+  },
+  "quadratic equation": {
+    "hin_Deva": "द्विघात समीकरण",
+    "tam_Taml": "இருபடி சமன்பாடு",
+    "ben_Beng": "দ্বিঘাত সমীকরণ"
+  },
+  "arithmetic progression": {
+    "hin_Deva": "समांतर श्रेढ़ी",
+    "ben_Beng": "সমান্তর প্রগতি"
+  },
+  "coordinate geometry": {
+    "hin_Deva": "निर्देशांक ज्यामिति"
+  },
+  "probability": {
+    "hin_Deva": "प्रायिकता",
+    "tam_Taml": "நிகழ்தகவு",
+    "ben_Beng": "সম্ভাবনা",
+    "tel_Telu": "సంభావ్యత"
+  },
+  "statistics": {
+    "hin_Deva": "सांख्यिकी",
+    "tam_Taml": "புள்ளியியல்",
+    "ben_Beng": "পরিসংখ্যান"
+  },
+  "acid": {
+    "hin_Deva": "अम्ल",
+    "tam_Taml": "அமிலம்",
+    "ben_Beng": "অ্যাসিড",
+    "tel_Telu": "ఆమ్లం",
+    "mar_Deva": "आम्ल"
+  },
+  "base": {
+    "hin_Deva": "क्षार",
+    "tam_Taml": "காரம்",
+    "ben_Beng": "ক্ষার"
+  },
+  "salt": {
+    "hin_Deva": "लवण",
+    "tam_Taml": "உப்பு"
+  },
+  "photosynthesis": {
+    "hin_Deva": "प्रकाश संश्लेषण",
+    "tam_Taml": "ஒளிச்சேர்க்கை",
+    "ben_Beng": "সালোকসংশ্লেষণ",
+    "tel_Telu": "కిరణజన్య సంయోగక్రియ",
+    "kan_Knda": "ದ್ಯುತಿಸಂಶ್ಲೇಷಣೆ",
+    "mar_Deva": "प्रकाशसंश्लेषण"
+  },
+  "electricity": {
+    "hin_Deva": "विद्युत",
+    "tam_Taml": "மின்சாரம்",
+    "ben_Beng": "বিদ্যুৎ",
+    "tel_Telu": "విద్యుత్",
+    "mar_Deva": "विद्युत"
+  },
+  "magnetic field": {
+    "hin_Deva": "चुंबकीय क्षेत्र",
+    "tam_Taml": "காந்தப்புலம்"
+  },
+  "reflection": {
+    "hin_Deva": "परावर्तन",
+    "tam_Taml": "எதிரொளிப்பு"
+  },
+  "refraction": {
+    "hin_Deva": "अपवर्तन",
+    "tam_Taml": "ஒளிவிலகல்"
+  },
+  "lens": {
+    "hin_Deva": "लेंस",
+    "tam_Taml": "லென்ஸ்"
+  },
+  "chemical reaction": {
+    "hin_Deva": "रासायनिक अभिक्रिया",
+    "tam_Taml": "வேதிவினை",
+    "ben_Beng": "রাসায়নিক বিক্রিয়া"
+  },
+  "periodic table": {
+    "hin_Deva": "आवर्त सारणी",
+    "tam_Taml": "ஆவர்த்தன அட்டவணை"
+  },
+  "metal": {
+    "hin_Deva": "धातु",
+    "tam_Taml": "உலோகம்"
+  },
+  "non-metal": {
+    "hin_Deva": "अधातु",
+    "tam_Taml": "அலோகம்"
+  },
+  "carbon": {
+    "hin_Deva": "कार्बन",
+    "tam_Taml": "கரிமம்"
+  },
+  "heredity": {
+    "hin_Deva": "आनुवंशिकता",
+    "tam_Taml": "மரபியல்",
+    "ben_Beng": "বংশগতি"
+  },
+  "evolution": {
+    "hin_Deva": "विकास (जैव)",
+    "tam_Taml": "பரிணாமம்"
+  },
+  "ecosystem": {
+    "hin_Deva": "पारिस्थितिक तंत्र",
+    "tam_Taml": "சூழ்நிலை மண்டலம்",
+    "ben_Beng": "বাস্তুতন্ত্র"
+  },
+  "natural resources": {
+    "hin_Deva": "प्राकृतिक संसाधन"
+  },
+  "reproduction": {
+    "hin_Deva": "जनन",
+    "tam_Taml": "இனப்பெருக்கம்"
+  },
+  "circle": {
+    "hin_Deva": "वृत्त",
+    "tam_Taml": "வட்டம்"
+  },
+  "triangle": {
+    "hin_Deva": "त्रिभुज",
+    "tam_Taml": "முக்கோணம்"
+  },
+  "theorem": {
+    "hin_Deva": "प्रमेय",
+    "tam_Taml": "தேற்றம்"
+  }
+}

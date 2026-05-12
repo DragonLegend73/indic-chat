@@ -1,0 +1,194 @@
+@import "tailwindcss";
+
+/* =========================================
+   Indic-Chat Design System
+   Dark neutral theme (ChatGPT-style)
+   ========================================= */
+
+@theme {
+  --color-bg-primary:   #212121;
+  --color-bg-secondary: #171717;
+  --color-bg-card:      #2f2f2f;
+  --color-bg-glass:     rgba(255, 255, 255, 0.05);
+  --color-surface:      #2f2f2f;
+  --color-border:       rgba(255, 255, 255, 0.08);
+  --color-border-hover: rgba(255, 255, 255, 0.22);
+
+  --color-accent:       #ffffff;
+  --color-accent-light: #ececec;
+  --color-accent-glow:  rgba(255, 255, 255, 0.06);
+  --color-success:      #22c55e;
+  --color-warning:      #f59e0b;
+  --color-error:        #ef4444;
+
+  --color-text-primary:   #ececec;
+  --color-text-secondary: #b4b4b4;
+  --color-text-muted:     #8e8ea0;
+
+  --font-sans: 'Inter', 'Noto Sans Devanagari', 'Noto Sans Bengali', 'Noto Sans Tamil', 'Noto Sans Telugu', 'Noto Sans Kannada', 'Noto Sans Malayalam', 'Noto Sans Gujarati', 'Noto Sans Gurmukhi', 'Noto Sans Odia', 'Noto Nastaliq Urdu', sans-serif;
+}
+
+/* Base */
+body {
+  background: var(--color-bg-primary);
+  color: var(--color-text-primary);
+  font-family: var(--font-sans);
+  min-height: 100vh;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: rgba(255,255,255,0.12); border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: rgba(255,255,255,0.25); }
+
+/* Glass Card */
+.glass-card {
+  background: var(--color-bg-card);
+  backdrop-filter: none;
+  border: 1px solid var(--color-border);
+  border-radius: 16px;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+.glass-card:hover {
+  border-color: var(--color-border-hover);
+  box-shadow: none;
+}
+
+/* Gradient Text — plain white in neutral theme */
+.gradient-text {
+  background: none;
+  -webkit-background-clip: unset;
+  -webkit-text-fill-color: #ffffff;
+  background-clip: unset;
+  color: #ffffff;
+}
+
+/* Message bubbles */
+.msg-user {
+  background: #3a3a3a;
+  border: 1px solid rgba(255,255,255,0.10);
+  border-radius: 20px 20px 4px 20px;
+}
+.msg-assistant {
+  background: var(--color-bg-card);
+  border: 1px solid var(--color-border);
+  border-radius: 20px 20px 20px 4px;
+}
+
+/* Voice button pulse */
+@keyframes pulse-ring {
+  0%   { transform: scale(1);   opacity: 0.6; }
+  100% { transform: scale(1.6); opacity: 0;   }
+}
+.voice-pulse::before {
+  content: '';
+  position: absolute;
+  inset: -4px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.3);
+  animation: pulse-ring 1.2s ease-out infinite;
+}
+
+/* Slide in animation for messages */
+@keyframes slide-up {
+  from { opacity: 0; transform: translateY(16px); }
+  to   { opacity: 1; transform: translateY(0);    }
+}
+.animate-slide-up {
+  animation: slide-up 0.3s ease-out;
+}
+
+/* Shimmer loading — dark neutral */
+@keyframes shimmer {
+  0%   { background-position: -200% 0; }
+  100% { background-position:  200% 0; }
+}
+.shimmer {
+  background: linear-gradient(
+    90deg,
+    #2f2f2f 25%,
+    #3a3a3a 50%,
+    #2f2f2f 75%
+  );
+  background-size: 200% 100%;
+  animation: shimmer 1.4s infinite;
+}
+
+/* Language badge colors (unchanged — these are fine on dark) */
+.badge-devanagari { background: #4f46e5; }
+.badge-tamil      { background: #0d9488; }
+.badge-bengali    { background: #16a34a; }
+.badge-telugu     { background: #ea580c; }
+.badge-kannada    { background: #9333ea; }
+.badge-malayalam  { background: #06b6d4; }
+.badge-gujarati   { background: #d97706; }
+.badge-gurmukhi   { background: #ec4899; }
+.badge-arabic     { background: #e11d48; }
+.badge-odia       { background: #059669; }
+.badge-latin      { background: #64748b; }
+
+/* KaTeX overrides for dark theme */
+.katex       { color: var(--color-text-primary) !important; }
+.katex .mord { color: var(--color-text-primary) !important; }
+
+/* Markdown Body Styles */
+.markdown-body {
+  font-size: 0.95rem;
+}
+.markdown-body p { margin-bottom: 0.75em; }
+.markdown-body p:last-child { margin-bottom: 0; }
+.markdown-body h1, .markdown-body h2, .markdown-body h3, .markdown-body h4 {
+  font-weight: 600;
+  margin-top: 1.2em;
+  margin-bottom: 0.5em;
+  color: var(--color-text-primary);
+}
+.markdown-body h1 { font-size: 1.4em; }
+.markdown-body h2 { font-size: 1.25em; }
+.markdown-body h3 { font-size: 1.1em; }
+.markdown-body h4 { font-size: 1em; }
+.markdown-body ul { list-style-type: disc; padding-left: 1.5em; margin-bottom: 0.75em; }
+.markdown-body ol { list-style-type: decimal; padding-left: 1.5em; margin-bottom: 0.75em; }
+.markdown-body li { margin-bottom: 0.25em; }
+.markdown-body li p { margin-bottom: 0.25em; }
+.markdown-body a { color: #60a5fa; text-decoration: underline; }
+.markdown-body code {
+  background: var(--color-bg-secondary);
+  padding: 0.2em 0.4em;
+  border-radius: 4px;
+  font-size: 0.9em;
+  font-family: inherit;
+}
+.markdown-body pre {
+  background: var(--color-bg-secondary);
+  padding: 1em;
+  border-radius: 8px;
+  overflow-x: auto;
+  margin-bottom: 0.75em;
+}
+.markdown-body pre code {
+  background: transparent;
+  padding: 0;
+  font-family: inherit;
+}
+.markdown-body blockquote {
+  border-left: 4px solid var(--color-border);
+  padding-left: 1em;
+  color: var(--color-text-muted);
+  margin-bottom: 0.75em;
+}
+.markdown-body table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 0.75em;
+}
+.markdown-body th, .markdown-body td {
+  border: 1px solid var(--color-border);
+  padding: 0.5em 0.75em;
+  text-align: left;
+}
+.markdown-body th {
+  background: var(--color-bg-secondary);
+  font-weight: 600;
+}

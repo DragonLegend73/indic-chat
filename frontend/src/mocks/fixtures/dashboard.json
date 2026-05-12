@@ -1,0 +1,28 @@
+{
+  "overview": {
+    "total_students": 150,
+    "total_interactions": 3200,
+    "total_quiz_attempts": 450,
+    "average_quiz_accuracy": 78
+  },
+  "topics": [
+    {
+      "topic": "Photosynthesis",
+      "avg_accuracy": 82,
+      "total_attempts": 45,
+      "student_count": 30
+    },
+    {
+      "topic": "Quadratic Equations",
+      "avg_accuracy": 65,
+      "total_attempts": 80,
+      "student_count": 55
+    }
+  ],
+  "languages": {
+    "distribution": [
+      { "language": "Hindi", "count": 60, "percentage": 40 },
+      { "language": "Marathi", "count": 45, "percentage": 30 }
+    ]
+  }
+}

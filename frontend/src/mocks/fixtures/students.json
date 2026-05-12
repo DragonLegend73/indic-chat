@@ -1,0 +1,14 @@
+[
+  {
+    "id": "s1",
+    "name": "Arjun",
+    "preferred_language": "hindi",
+    "current_difficulty": "easy"
+  },
+  {
+    "id": "s2",
+    "name": "Meera",
+    "preferred_language": "marathi",
+    "current_difficulty": "medium"
+  }
+]
