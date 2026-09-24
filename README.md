@@ -55,6 +55,21 @@ All intermediate reasoning, retrieval, and generation happens in English — the
 
 ---
 
+## ⚡ Performance
+
+Measured end-to-end response latency:
+
+| Metric                        | Value                                   |
+| ----------------------------- | --------------------------------------- |
+| English queries               | 1–3 s (query → first token)             |
+| Indic-language queries        | 3–7 s (includes two IndicTrans2 passes) |
+| Quiz generation               | 2–5 s per question                      |
+| Memory footprint (all models) | 3–5 GB RAM                              |
+
+Term-protection layer preserved **100%** of evaluated NCERT scientific/mathematical terms and LaTeX expressions through the translation pipeline.
+
+---
+
 ## 🏗️ System Architecture
 
 ```
