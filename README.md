@@ -59,21 +59,21 @@ All intermediate reasoning, retrieval, and generation happens in English — the
 
 ```
 ┌─────────────────────────────────────────────────────────────────┐
-│                     React 19 + Vite 6 Frontend                   │
+│                     React 19 + Vite 6 Frontend                  │
 │   Chat UI · Quiz Engine · Teacher Dashboard · KaTeX Math        │
 └────────────────────────────┬────────────────────────────────────┘
                              │ REST + SSE
 ┌────────────────────────────▼────────────────────────────────────┐
-│                    FastAPI Backend (Async)                       │
-│                                                                  │
+│                    FastAPI Backend (Async)                      │
+│                                                                 │
 │  ┌──────────────┐  ┌──────────────┐  ┌───────────────────────┐  │
 │  │  Language    │  │     RAG      │  │   Translation         │  │
 │  │  Detection   │  │  (ChromaDB + │  │  (IndicTrans2 200M)   │  │
 │  │  (IndicLID)  │  │  BGE-small)  │  │  + Term/LaTeX Protect │  │
 │  └──────────────┘  └──────────────┘  └───────────────────────┘  │
-│                                                                  │
+│                                                                 │
 │  ┌──────────────┐  ┌──────────────┐  ┌───────────────────────┐  │
-│  │  Adaptive    │  │     LLM      │  │  Auth + Analytics       │  │
+│  │  Adaptive    │  │     LLM      │  │  Auth + Analytics     │  │
 │  │  Learning    │  │ (Gemma-4-E2B │  │  (JWT + SQLite)       │  │
 │  │  Engine      │  │  / Ollama)   │  │                       │  │
 │  └──────────────┘  └──────────────┘  └───────────────────────┘  │
